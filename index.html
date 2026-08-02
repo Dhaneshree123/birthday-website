@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, With Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section id="welcome" class="screen active">
+      <div class="glow"></div>
+      <div class="content">
+        <p class="eyebrow">A little something for you</p>
+        <h1>Happy Birthday,<br><span>Shreyyuuu❤️</span></h1>
+        <p class="subtitle">I made something special for you...</p>
+        <button class="primary-btn" data-next="memories">Start Our Story <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="memories" class="screen">
+      <div class="section-wrap">
+        <p class="eyebrow">A few moments I treasure</p>
+        <h2>Our Memories</h2>
+
+        <div class="memory-card">
+          <button class="nav-btn prev" id="prevBtn" aria-label="Previous memory">‹</button>
+
+          <div class="memory-image-wrap">
+            <img id="memoryImage" src="photos/photo1.jpg" alt="Our memory">
+          </div>
+
+          <div class="memory-info">
+            <span class="memory-number" id="memoryNumber">01 / 05</span>
+            <h3 id="memoryTitle">Where It All Started</h3>
+            <p id="memoryCaption">Somehow, this ordinary moment became one of the memories I never want to forget. ❤️</p>
+          </div>
+
+          <button class="nav-btn next" id="nextBtn" aria-label="Next memory">›</button>
+        </div>
+
+        <div class="dots" id="dots"></div>
+        <button class="secondary-btn" id="continueBtn">There's one more thing... 💌</button>
+      </div>
+    </section>
+
+    <section id="letterIntro" class="screen">
+      <div class="section-wrap small">
+        <div class="envelope-icon">💌</div>
+        <p class="eyebrow">For your eyes only</p>
+        <h2>There's one more thing<br>for you...</h2>
+        <p class="subtitle">A little letter, written only for you.</p>
+        <button class="primary-btn" data-next="password">Open My Letter <span>💌</span></button>
+      </div>
+    </section>
+
+    <section id="password" class="screen">
+      <div class="section-wrap small">
+        <div class="lock">🔐</div>
+        <p class="eyebrow">A little secret</p>
+        <h2>This letter is locked</h2>
+        <p class="subtitle">You know the password... 😉</p>
+
+        <div class="hint">
+          <strong>A little hint... ❤️</strong>
+          <span>The day that holds a special place in our story.</span>
+          <span>4 digits.</span>
+        </div>
+
+        <div class="pin-boxes" id="pinBoxes">
+          <input maxlength="1" inputmode="numeric" autocomplete="off" aria-label="Digit 1">
+          <input maxlength="1" inputmode="numeric" autocomplete="off" aria-label="Digit 2">
+          <input maxlength="1" inputmode="numeric" autocomplete="off" aria-label="Digit 3">
+          <input maxlength="1" inputmode="numeric" autocomplete="off" aria-label="Digit 4">
+        </div>
+
+        <p class="error" id="pinError" aria-live="polite"></p>
+        <button class="primary-btn" id="unlockBtn">Unlock 💌</button>
+      </div>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="section-wrap letter-wrap">
+        <div class="opened-envelope" id="openedEnvelope">
+          <div class="envelope-body"></div>
+          <div class="envelope-flap"></div>
+          <div class="letter-paper"></div>
+        </div>
+
+        <div class="letter-card" id="letterCard">
+          <p class="letter-date">For the birthday boy ❤️</p>
+          <h2>My Letter to You</h2>
+
+          <div class="letter-text">
+            <p>Happyyyy birthdayyy Betuuuuuu 🥺🎂💞🫶🏻
+22 alreadyyyy 😭😂🫣 bhale ne aaje badhu perfect feel nathi thatu, but stilllll today is your dayyy okayyy 🥺❤️ and I really really hope ke aa new year of your life tane ghani badhi happiness, peace, success ane lots of good people aape 🫶🏻✨</p>
+            <p>Ane betuuu, bhale ne ee loko tane eevu feel karave che, hu to chu ne tari jodeee 🫂🥺 why are you feeling so much lowww? Atleast aamada to nai pls 😭 kai bi thay, hu chu ne tari jode. You don't have to handle everything alone okayyy? 🥺💞</p>
+            <p>Mane khabar che aamada thi mane Ne tane proper time nai mali sakto(ek bija jode spent karvano), but you are a special one okayyyy 🫵🏻🥺❤️ and I hope you always remember that.</p>
+            <p>And right now I just want you to smile thodu mara mateee 🫶🏻🥺
+And honestly, aa 6 months ma tu mara mate ghano special bani gayo cheee 🥺💞 so thank you for being youuu and thank you for being in my life 🫂
+I just want your 22nd year to be better than everything you've been going through lately. More smiles, less overthinking, better people, peaceful days and obviouslyyy me irritating youuu 😭😂🫶🏻
+Once againnn, happiest birthday to my Betuuu 🥺🎂💞
+Please smile todayyy, even if it's just thodu sa mara mateee 🫣🫶🏻
+And one biiiggggg birthday hugggg 🫂🫶🏻💞</p>
+            <p>Thank you for being you. ❤️</p>
+          </div>
+
+          <p class="signature">Forever yours,<br><strong>Dhanuuu ❤️</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
